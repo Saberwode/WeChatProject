@@ -17,15 +17,6 @@
         </swiper-item>
       </div>
     </swiper>
-    <!-- <swiper :options="swiperOptions">
-      <swiper-slide v-for="item in swiperItem" :key="item.id">
-        <img :src="item.image" alt="" />
-        <p class="main-title">{{ item.title }}</p>
-        <p class="author">{{ item.hint }}</p>
-      </swiper-slide>
-
-      <div class="swiper-pagination" slot="pagination"></div>
-    </swiper> -->
   </div>
 </template>
 <script>
@@ -48,6 +39,7 @@ export default {
     };
   },
   created() {
+    // 获取轮播图信息
     wx.request({
       url: "http://news-at.zhihu.com/api/3/stories/latest ",
       success: (res) => {

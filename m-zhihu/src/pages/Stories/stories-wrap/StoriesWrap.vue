@@ -1,13 +1,14 @@
 <template>
   <div class="stories-body">
+    <!-- 每次请求会返回六个故事和一个标题 -->
     <div v-for="(item, index) in stories" :key="index">
+      <!-- 如果返回的日期不是今天，就显示分割线 -->
       <van-divider
         contentPosition="left"
         v-if="item.date != today"
         class="divider"
       >
         {{ item.date }}
-        <!-- {{ beforeDate(item) }} -->
       </van-divider>
       <!-- <div v-if="item.date !== today">{{ beforeDate(item) }}</div> -->
 
@@ -43,6 +44,7 @@ export default {
     },
   },
   methods: {
+    // 将返回的日期重写格式
     beforeDate(item) {
       let date = String(item).split("");
       let day = date[6] + date[7];
@@ -50,12 +52,13 @@ export default {
       console.log(`${month}月${day}日`);
       return `${month} 月 ${day} 日`;
     },
-    // setToday(item) {},
+    // 获取时间
     getDate() {
       const moment = require("../../../../node_modules/moment");
       this.today = moment().format("YYYYMMDD");
       this.date = this.today;
     },
+    // 上拉加载函数
     load() {
       console.log(this.date);
       console.log(this.today);

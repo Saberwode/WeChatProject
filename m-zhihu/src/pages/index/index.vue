@@ -1,7 +1,10 @@
 <template>
   <div class="body">
+    <!-- 头部 -->
     <header-content></header-content>
+    <!-- 轮播图 -->
     <banner-content></banner-content>
+    <!-- 故事部分 -->
     <stories-wrap></stories-wrap>
   </div>
 </template>

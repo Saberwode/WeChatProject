@@ -65,32 +65,4 @@ a {
   font-size: 24rpx;
   opacity: 0.6;
 }
-/* a {
-  text-decoration: none;
-  color: black;
-}
-.item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  padding: 20rpx;
-}
-.item-content {
-  display: flex;
-  flex-direction: column;
-}
-.p-title {
-  font-size: 20rpx;
-  font-weight: bolder;
-}
-.p-hint {
-  font-size: 15rpx;
-  opacity: 0.6;
-}
-.item-img {
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 5rpx;
-} */
 </style>
