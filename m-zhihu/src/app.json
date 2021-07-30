@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/index/main"
+  ],
+  "usingComponents": {
+    "van-divider": "./static/dist/divider/index",
+    "van-image": "./static/dist/image/index"
+  }
+}
