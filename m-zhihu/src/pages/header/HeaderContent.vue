@@ -41,11 +41,16 @@ export default {
 </script>
 <style scoped>
 .header {
+  position: fixed;
   display: flex;
   align-items: center;
   width: 100%;
   /* padding: 15px; */
+  z-index: 1001;
+  background: #ffffff;
+  /* height: 100%; */
   padding: 20rpx 10rpx;
+  overflow: hidden;
 }
 .date {
   width: 10%;

@@ -90,7 +90,6 @@ export default {
             this.date -= 1;
           },
         });
-        console.log(this.stories);
       }
     },
   },
@@ -98,7 +97,6 @@ export default {
     this.getDate();
     this.load();
     this.today = this.beforeDate(this.today);
-    console.log(this.today);
   },
   onReachBottom() {
     this.load();

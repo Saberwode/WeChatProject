@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="banner-body">
     <swiper
       autoplay
       indicator-dots
@@ -52,6 +52,9 @@ export default {
 };
 </script>
 <style scoped>
+.banner-body {
+  padding-top: 140rpx;
+}
 image {
   width: 100%;
 }
